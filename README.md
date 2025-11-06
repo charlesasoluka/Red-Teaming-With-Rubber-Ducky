@@ -36,7 +36,7 @@ This project provides a walkthrough of an autonomous USB delivery assessment (Ru
 ## What’s included
 - `server/` — server stub for staging/beaconing. 
 - `samples/linux/` — Payload for Linux machine
-- `samples/windows/` — Paylaod for Windows machine 
+- `samples/windows/` — Payload for Windows machine 
 - `docs/` — lab setup, defensive notes, and recommended telemetry.
 
 ---
