@@ -24,7 +24,7 @@ Read the safety and legal warnings below *before* you do anything.
 - [High-level summary](#high-level-summary)  
 - [What’s included (conceptual)](#whats-included-conceptual)  
 - [Short conceptual descriptions](#short-conceptual-descriptions)  
-- [Cyber Kill Chain mapping](#cyber-kill-chain-mapping)  
+
 
 ---
 
@@ -73,20 +73,6 @@ This project provides a walkthrough of an autonomous USB delivery assessment (Ru
 
 ---
 
-## Cyber Kill Chain mapping
 
-We map the traditional kill chain stages to the conceptual steps represented here so you can think both like an attacker and a defender.
-
-```mermaid
-flowchart LR
-  Recon[Reconnaissance]
-  Weapon[Weaponization (concept)]
-  Delivery[Delivery (USB / keystroke)]
-  Exploit[Exploitation (initial execution - concept)]
-  Install[Installation / Persistence (concept)]
-  C2[Command & Control (beaconing concept)]
-  Actions[Actions on Objectives (collection / exfil - concept)]
-
-  Recon --> Weapon --> Delivery --> Exploit --> Install --> C2 --> Actions
 
 
