@@ -1,7 +1,5 @@
 # Rubber Ducky 
 
-> **Purpose:** a red team exercise explaining the *concepts* behind an autonomous USB / Rubber‑Ducky style assessment for Linux and Windows.  
-> **Short version:** this repository is for learning, detection practice, and reporting. 
 
 ---
 
