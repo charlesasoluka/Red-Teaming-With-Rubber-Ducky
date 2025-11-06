@@ -13,7 +13,7 @@ Read the safety and legal warnings below *before* you do anything.
 ## 🚨 Very strict legal & safety disclaimers (read carefully)
 - **Do not run offensive code** on systems you do not own or do not have explicit, written permission to test.  
 - **Unauthorized access or modification of computer systems is illegal.** Running or distributing operational attack code without authorization can lead to criminal prosecution, civil liability, academic discipline, fines, and **imprisonment**. This is a real legal boundary — not a suggestion. 
-- If you are an instructor or lab owner and require runnable lab assets, create a **private, permissioned** lab environment and coordinate with your institution. Never publish operational code in public repositories.  
+- If you are an instructor or lab owner and require runnable lab assets, create a **private, permissioned** lab environment and coordinate with your institution.  
 - **Hardware safety warning:** Use the Dupont cable to bridge the Rubber Ducky device when writing the payload onto it. Failure to do so will run the payload on your host machine rather than the virtual machine.
 
 - Make sure you edit the IPs to match that of your host machine. I used three VMs to stage this attack. The attack VM (Kali) and the two victims, Ubuntu and Windows. The payloads (of both Windows and Linux) are hosted on the attack VM whilst Ubuntu and Windows have the Payload.dd file.
